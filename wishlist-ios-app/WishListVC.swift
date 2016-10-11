@@ -11,15 +11,21 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
 import SwiftKeychainWrapper
-import SlideMenuControllerSwift
+import SideMenu
 
 class WishListVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
 
+    }
+    
+
+    
     //Signs the user out.
     @IBAction func signOutTapped(_ sender: AnyObject) {
         let keychainResult = KeychainWrapper.defaultKeychainWrapper().removeObjectForKey(KEY_UID)

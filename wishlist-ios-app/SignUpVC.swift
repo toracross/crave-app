@@ -22,9 +22,9 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Stuff goes here, but we don't want things to disappear. So really, don't put anything here.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        //Stuff goes here, but we don't want things to disappear. So really, don't put anything here.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -70,6 +70,7 @@ class SignUpVC: UIViewController {
     
     
     @IBAction func signUpTapped(_ sender: AnyObject) {
+        let username = nameTextField.text
         if let email = emailTextField.text, let pwd = pwTextField.text {
             FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                 if error != nil {
@@ -81,7 +82,7 @@ class SignUpVC: UIViewController {
                 } else {
                     print("TC: Successfully authenticated with Firebase.")
                     if let user = user {
-                        let userData = ["provider": user.providerID, "userName": "\(user.displayName)", "userEmail": "\(user.email)", "usePhoto": "\(user.photoURL)"]
+                        let userData = ["provider": user.providerID, "userName": "\(username)", "userEmail": "\(user.email)", "usePhoto": "\(user.photoURL)"]
                         self.completeSignIn(id: user.uid, userData: userData)
                         
                     }

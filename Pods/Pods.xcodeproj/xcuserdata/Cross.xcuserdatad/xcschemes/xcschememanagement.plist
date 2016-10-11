@@ -8,36 +8,65 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>FBSDKLoginKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-wishlist-ios-app.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>SlideMenuControllerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>SwiftKeychainWrapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28BB39DDF5A5051AA89D8C6E48743A8B</key>
+		<key>10EFAA7F7D1CA34747E6CCF8ED17A4DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17CEED1DA0C9F2B30E3610E7B1EE7603</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25BC99C7EE66C072C25019DC0852C049</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +81,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>963A0C4C543D9C18A1D386A716E34376</key>
+		<key>7BF4A8044E100CE5FDBF9D8177F09757</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DCE03CA9A4D77EE143814DD4FD97F023</key>
 		<dict>
 			<key>primary</key>
 			<true/>

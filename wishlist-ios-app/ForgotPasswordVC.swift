@@ -14,10 +14,13 @@ class ForgotPasswordVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     override func viewDidLayoutSubviews() {
-        //The email field
+        //Customize the text entry field with emails.
         let emailBorder = CALayer()
         let emailWidth = CGFloat(2.0)
         emailBorder.borderColor = UIColor.black.cgColor
@@ -26,6 +29,17 @@ class ForgotPasswordVC: UIViewController {
         emailBorder.borderWidth = emailWidth
         emailTextField.layer.addSublayer(emailBorder)
         emailTextField.layer.masksToBounds = true
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    @IBAction func resetPassBtnPressed (_ sender: AnyObject!) {
+        
+        
+        
+        dismissKeyboard()
     }
     
 

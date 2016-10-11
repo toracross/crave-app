@@ -13,4 +13,6 @@ target 'wishlist-ios-app' do
   pod 'FBSDKLoginKit'
   pod 'SwiftKeychainWrapper'
   pod 'SlideMenuControllerSwift'
+  pod 'SideMenu'
+
 end

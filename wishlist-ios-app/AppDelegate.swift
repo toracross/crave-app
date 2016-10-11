@@ -11,7 +11,6 @@ import CoreData
 import Firebase
 import FirebaseInstanceID
 import FBSDKLoginKit
-import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,9 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         FIRApp.configure()
         
-        let slideMenuController = SlideMenuController(mainViewController: WishListVC, leftMenuViewController: ForgotPasswordVC, rightMenuViewController: SignUpVC)
-        self.window?.rootViewController = slideMenuController
-        self.window?.makeKeyAndVisible()
+
         
         return true
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		300FD16E1DA982B200A127DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 300FD16D1DA982B200A127DF /* GoogleService-Info.plist */; };
 		30131AE21DA98F650077A97B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30131AE11DA98F650077A97B /* ForgotPasswordVC.swift */; };
+		30479B611DAAE6DD0019A6BD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30479B601DAAE6DD0019A6BD /* SWRevealViewController.m */; };
 		307E4CC31DA985230050AD82 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E4CC21DA985230050AD82 /* DataService.swift */; };
 		307E4CC51DA9852D0050AD82 /* KEY_UID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307E4CC41DA9852D0050AD82 /* KEY_UID.swift */; };
 		3084ACFB1DA89639004F43E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3084ACFA1DA89639004F43E5 /* AppDelegate.swift */; };
@@ -21,6 +22,10 @@
 		3084AD1E1DA896D2004F43E5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3084AD181DA896D2004F43E5 /* CircleView.swift */; };
 		3084AD211DA897EE004F43E5 /* SeaPinkGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3084AD201DA897EE004F43E5 /* SeaPinkGradient.swift */; };
 		3084AD231DA8A66E004F43E5 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3084AD221DA8A66E004F43E5 /* RoundedImageView.swift */; };
+		309728661DAC6F0600A1BC35 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309728651DAC6F0600A1BC35 /* ShareViewController.swift */; };
+		309728691DAC6F0600A1BC35 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309728671DAC6F0600A1BC35 /* MainInterface.storyboard */; };
+		3097286D1DAC6F0600A1BC35 /* craveshare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 309728631DAC6F0600A1BC35 /* craveshare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		309728741DAC710900A1BC35 /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = 309728731DAC710900A1BC35 /* GetURL.js */; };
 		309C9CEA1DA9729C005783FF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C9CE91DA9729C005783FF /* LoginVC.swift */; };
 		309C9CEC1DA97FAD005783FF /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C9CEB1DA97FAD005783FF /* WishListVC.swift */; };
 		30EFA5E11DA9D89B00E356B6 /* andalemono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30EFA5E01DA9D89B00E356B6 /* andalemono.ttf */; };
@@ -33,10 +38,37 @@
 		4DEF49D716A7CC0F43F80CDC /* Pods_wishlist_ios_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20059B34DEA6470941182260 /* Pods_wishlist_ios_app.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3097286B1DAC6F0600A1BC35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3084ACEF1DA89638004F43E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309728621DAC6F0600A1BC35;
+			remoteInfo = craveshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		309728711DAC6F0600A1BC35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3097286D1DAC6F0600A1BC35 /* craveshare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		20059B34DEA6470941182260 /* Pods_wishlist_ios_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wishlist_ios_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		300FD16D1DA982B200A127DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30131AE11DA98F650077A97B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		30479B5E1DAAE6DC0019A6BD /* wishlist-ios-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wishlist-ios-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		30479B5F1DAAE6DD0019A6BD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		30479B601DAAE6DD0019A6BD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		307E4CC21DA985230050AD82 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		307E4CC41DA9852D0050AD82 /* KEY_UID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KEY_UID.swift; sourceTree = "<group>"; };
 		3084ACF71DA89639004F43E5 /* wishlist-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wishlist-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +83,12 @@
 		3084AD181DA896D2004F43E5 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		3084AD201DA897EE004F43E5 /* SeaPinkGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaPinkGradient.swift; sourceTree = "<group>"; };
 		3084AD221DA8A66E004F43E5 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		309728631DAC6F0600A1BC35 /* craveshare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = craveshare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		309728651DAC6F0600A1BC35 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		309728681DAC6F0600A1BC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3097286A1DAC6F0600A1BC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309728721DAC704500A1BC35 /* craveshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = craveshare.entitlements; sourceTree = "<group>"; };
+		309728731DAC710900A1BC35 /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
 		309C9CE91DA9729C005783FF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		309C9CEB1DA97FAD005783FF /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		30EFA5E01DA9D89B00E356B6 /* andalemono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = andalemono.ttf; sourceTree = "<group>"; };
@@ -78,6 +116,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		309728601DAC6F0600A1BC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,10 +135,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		30479B5D1DAAE6CD0019A6BD /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				30479B5F1DAAE6DD0019A6BD /* SWRevealViewController.h */,
+				30479B601DAAE6DD0019A6BD /* SWRevealViewController.m */,
+				30479B5E1DAAE6DC0019A6BD /* wishlist-ios-app-Bridging-Header.h */,
+			);
+			name = SideBar;
+			sourceTree = "<group>";
+		};
 		3084ACEE1DA89638004F43E5 = {
 			isa = PBXGroup;
 			children = (
 				3084ACF91DA89639004F43E5 /* wishlist-ios-app */,
+				309728641DAC6F0600A1BC35 /* craveshare */,
 				3084ACF81DA89639004F43E5 /* Products */,
 				20D5804CAC2FC01CD0339D44 /* Pods */,
 				6B59BA432563FBE1B2F02C24 /* Frameworks */,
@@ -104,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3084ACF71DA89639004F43E5 /* wishlist-ios-app.app */,
+				309728631DAC6F0600A1BC35 /* craveshare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,10 +213,8 @@
 		3084AD121DA896A4004F43E5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3084ACFC1DA89639004F43E5 /* SignUpVC.swift */,
-				309C9CE91DA9729C005783FF /* LoginVC.swift */,
-				30131AE11DA98F650077A97B /* ForgotPasswordVC.swift */,
-				309C9CEB1DA97FAD005783FF /* WishListVC.swift */,
+				3097285C1DAC247400A1BC35 /* WIshList */,
+				3097285B1DAC246600A1BC35 /* Login */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -167,9 +222,40 @@
 		3084AD131DA896A9004F43E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30479B5D1DAAE6CD0019A6BD /* SideBar */,
 				309C9CE81DA955F0005783FF /* Custom Designs */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3097285B1DAC246600A1BC35 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3084ACFC1DA89639004F43E5 /* SignUpVC.swift */,
+				309C9CE91DA9729C005783FF /* LoginVC.swift */,
+				30131AE11DA98F650077A97B /* ForgotPasswordVC.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		3097285C1DAC247400A1BC35 /* WIshList */ = {
+			isa = PBXGroup;
+			children = (
+				309C9CEB1DA97FAD005783FF /* WishListVC.swift */,
+			);
+			name = WIshList;
+			sourceTree = "<group>";
+		};
+		309728641DAC6F0600A1BC35 /* craveshare */ = {
+			isa = PBXGroup;
+			children = (
+				309728721DAC704500A1BC35 /* craveshare.entitlements */,
+				309728651DAC6F0600A1BC35 /* ShareViewController.swift */,
+				309728671DAC6F0600A1BC35 /* MainInterface.storyboard */,
+				3097286A1DAC6F0600A1BC35 /* Info.plist */,
+				309728731DAC710900A1BC35 /* GetURL.js */,
+			);
+			path = craveshare;
 			sourceTree = "<group>";
 		};
 		309C9CE81DA955F0005783FF /* Custom Designs */ = {
@@ -209,15 +295,34 @@
 				3084ACF51DA89639004F43E5 /* Resources */,
 				FBD313BBAE37954BC151FFA0 /* [CP] Embed Pods Frameworks */,
 				46C27C61FF9364D189360C71 /* [CP] Copy Pods Resources */,
+				309728711DAC6F0600A1BC35 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3097286C1DAC6F0600A1BC35 /* PBXTargetDependency */,
 			);
 			name = "wishlist-ios-app";
 			productName = "wishlist-ios-app";
 			productReference = 3084ACF71DA89639004F43E5 /* wishlist-ios-app.app */;
 			productType = "com.apple.product-type.application";
+		};
+		309728621DAC6F0600A1BC35 /* craveshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309728701DAC6F0600A1BC35 /* Build configuration list for PBXNativeTarget "craveshare" */;
+			buildPhases = (
+				3097285F1DAC6F0600A1BC35 /* Sources */,
+				309728601DAC6F0600A1BC35 /* Frameworks */,
+				309728611DAC6F0600A1BC35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = craveshare;
+			productName = craveshare;
+			productReference = 309728631DAC6F0600A1BC35 /* craveshare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -232,13 +337,26 @@
 					3084ACF61DA89639004F43E5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = NG6UM76K5M;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
 							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					309728621DAC6F0600A1BC35 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NG6UM76K5M;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
 						};
@@ -259,6 +377,7 @@
 			projectRoot = "";
 			targets = (
 				3084ACF61DA89639004F43E5 /* wishlist-ios-app */,
+				309728621DAC6F0600A1BC35 /* craveshare */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +393,15 @@
 				30EFA5E51DA9E38F00E356B6 /* Main.storyboard in Resources */,
 				30EFA5E11DA9D89B00E356B6 /* andalemono.ttf in Resources */,
 				30EFA5E31DA9D98000E356B6 /* andalemono-bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309728611DAC6F0600A1BC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309728691DAC6F0600A1BC35 /* MainInterface.storyboard in Resources */,
+				309728741DAC710900A1BC35 /* GetURL.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +467,7 @@
 				3084ACFD1DA89639004F43E5 /* SignUpVC.swift in Sources */,
 				309C9CEA1DA9729C005783FF /* LoginVC.swift in Sources */,
 				3084ACFB1DA89639004F43E5 /* AppDelegate.swift in Sources */,
+				30479B611DAAE6DD0019A6BD /* SWRevealViewController.m in Sources */,
 				30131AE21DA98F650077A97B /* ForgotPasswordVC.swift in Sources */,
 				3084AD1D1DA896D2004F43E5 /* FancyButton.swift in Sources */,
 				3084AD231DA8A66E004F43E5 /* RoundedImageView.swift in Sources */,
@@ -348,7 +477,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3097285F1DAC6F0600A1BC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309728661DAC6F0600A1BC35 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3097286C1DAC6F0600A1BC35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309728621DAC6F0600A1BC35 /* craveshare */;
+			targetProxy = 3097286B1DAC6F0600A1BC35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3084AD061DA89639004F43E5 /* LaunchScreen.storyboard */ = {
@@ -357,6 +502,14 @@
 				3084AD071DA89639004F43E5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		309728671DAC6F0600A1BC35 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				309728681DAC6F0600A1BC35 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -461,6 +614,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "wishlist-ios-app/wishlist-ios-app.entitlements";
 				DEVELOPMENT_TEAM = NG6UM76K5M;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -471,6 +625,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.toracross.craveapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wishlist-ios-app/wishlist-ios-app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -481,6 +637,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "wishlist-ios-app/wishlist-ios-app.entitlements";
 				DEVELOPMENT_TEAM = NG6UM76K5M;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -491,6 +648,35 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.toracross.craveapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wishlist-ios-app/wishlist-ios-app-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3097286E1DAC6F0600A1BC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = craveshare/craveshare.entitlements;
+				DEVELOPMENT_TEAM = NG6UM76K5M;
+				INFOPLIST_FILE = craveshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toracross.craveapp.craveshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3097286F1DAC6F0600A1BC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = craveshare/craveshare.entitlements;
+				DEVELOPMENT_TEAM = NG6UM76K5M;
+				INFOPLIST_FILE = craveshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toracross.craveapp.craveshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -515,6 +701,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		309728701DAC6F0600A1BC35 /* Build configuration list for PBXNativeTarget "craveshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3097286E1DAC6F0600A1BC35 /* Debug */,
+				3097286F1DAC6F0600A1BC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

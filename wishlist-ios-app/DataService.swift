@@ -52,7 +52,6 @@ class DataService {
     var REF_USER_CURRENT: FIRDatabaseReference {
         let uid = KeychainWrapper.defaultKeychainWrapper().stringForKey(KEY_UID)
         let user = REF_USERS.child(uid!)
-        //let displayName = REF_BASE.child("displayName")
         return user
     }
     
