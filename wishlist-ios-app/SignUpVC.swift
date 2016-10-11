@@ -49,19 +49,19 @@ class SignUpVC: UIViewController {
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (facebookResult, facebookError) -> Void in
             if facebookError != nil {
-                print("TC: Unable to authenticate with Facebook")
+                print("TC: Unable to authenticate with Facebook. Reason: \(facebookError)")
                 let alert = UIAlertController(title: "Oops.", message: "Sorry, something went wrong. It's not you, we promise. Please try again.", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
 
             } else if facebookResult?.isCancelled == true {
-                print("TC: User cancelled Facebook authentication")
+                print("TC: User cancelled Facebook authentication. Error Detail: \(facebookError)")
                 let alert = UIAlertController(title: "Login Cancelled.", message: "Facebook login has been cancelled.", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
 
             } else {
-                print("TC: Successfully authenticated with Facebook")
+                print("TC: Successfully authenticated with Facebook.")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
             }
@@ -82,7 +82,7 @@ class SignUpVC: UIViewController {
                 } else {
                     print("TC: Successfully authenticated with Firebase.")
                     if let user = user {
-                        let userData = ["provider": user.providerID, "userName": "\(username)", "userEmail": "\(user.email)", "usePhoto": "\(user.photoURL)"]
+                        let userData = ["provider": user.providerID, "userName": "\(username)", "userEmail": "\(user.email)"]
                         self.completeSignIn(id: user.uid, userData: userData)
                         
                     }
@@ -107,7 +107,7 @@ class SignUpVC: UIViewController {
             } else {
                 print("TC: Successfully authenticated with Firebase. - \(error)")
                 if let user = user {
-                    let userData = ["provider": credential.provider, "userName": "\(self.emailTextField.text)", "userEmail": "\(user.email)", "usePhoto": "\(user.photoURL)"]
+                    let userData = ["provider": credential.provider, "userName": "\(self.emailTextField.text)", "userEmail": "\(user.email)"]
                     self.completeSignIn(id: user.uid, userData: userData)
                 }
             }

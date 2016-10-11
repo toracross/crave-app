@@ -16,7 +16,6 @@ import SideMenu
 class WishListVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

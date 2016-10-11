@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ForgotPasswordVC: UIViewController {
     
@@ -36,9 +37,20 @@ class ForgotPasswordVC: UIViewController {
     }
     
     @IBAction func resetPassBtnPressed (_ sender: AnyObject!) {
-        
-        
-        
+        let email = emailTextField.text
+        FIRAuth.auth()?.sendPasswordReset(withEmail: email!) { error in
+            if error != nil {
+                print("Missing information. User did not enter something.")
+                let alert = UIAlertController(title: "Invalid Email Address", message: "Please enter your email address.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                print("Password reset sent.")
+                let alert = UIAlertController(title: "Password Sent", message: "We've sent you a temporary password, please check your email.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK!", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
         dismissKeyboard()
     }
     

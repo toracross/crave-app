@@ -75,7 +75,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Q-xp-xhz">
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="15"/>
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -85,14 +85,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-UW-X5F">
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="13"/>
                                 <state key="normal" title="Already have an account?"/>
                                 <connections>
                                     <segue destination="z0B-xO-Sdb" kind="show" id="ZyF-W6-raI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pj-zM-jlr">
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="13"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
                                     <segue destination="saE-TX-q2j" kind="show" id="rQT-go-Dw2"/>
@@ -229,7 +229,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-Nc-Trm">
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="15"/>
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -248,14 +248,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-iM-mrw">
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="13"/>
                                 <state key="normal" title="Don't have an account?"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="moh-Zx-yS9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kc5-ny-Zdu">
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="13"/>
                                 <state key="normal" title="Forgot Password?"/>
                                 <connections>
                                     <segue destination="saE-TX-q2j" kind="show" id="rr9-Xj-HXI"/>
@@ -423,10 +423,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JdN-Nm-SGz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="20"/>
                                 <state key="normal" title="Reset Password">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetPassBtnPressed:" destination="saE-TX-q2j" eventType="touchUpInside" id="RyS-HG-C88"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-rG-RXr">
                                 <constraints>
@@ -481,7 +484,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rr9-Xj-HXI"/>
-        <segue reference="78R-bE-uhe"/>
+        <segue reference="TCD-Oa-he3"/>
         <segue reference="Key-UH-zZV"/>
     </inferredMetricsTieBreakers>
 </document>
